@@ -2,10 +2,10 @@
 
     <h1>registration</h1>
 <label for="username">username:</label>
-<input type="text" id="username" [(ngModel)]="username">
+<input type="text" id="username" [(ngModel)]="username" required>
 <br>
 <label for="password">Password:</label>
-<input type="password" id="password" [(ngModel)]="password">
+<input type="password" id="password" [(ngModel)]="password" required>
 <br>
 
 <button (click)="registration()">Submit</button>

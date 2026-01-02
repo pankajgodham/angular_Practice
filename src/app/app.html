@@ -1,58 +1,13 @@
-<h1>{{ name }}</h1>
-<h2>{{ x }} + {{ y }} = {{ x + y }}</h2>
-{{ count }}
-{{c}}
-<button (click)="increment()">Increment</button>
-<button (click)="decrement()">Decrement</button>
-<button (click)="reset()">Reset</button>
-<button (click)="alert()">Alert Pop-up</button>
-<button (click)="sum()">sum</button>
 
-<button (mouseenter)="event($event)" name="preet">Event</button>
-
-<input type="text" (input)="update($event)" />
-
-<br/>
-
-<input type="text" (input)="getName($event)" />
-<br/>
-{{ username }}
-<br/>
-Email:{{email}}
-<br/>
-
-<input type="text" #emailId/>
-<button (click)="Getemail(emailId.value)">Get Email</button>
-<hr>
-<br/>
-<br/>
-<button (click)="hide()">Hide</button>
-<button (click)="show()">Show</button>
-@if(display){
-<div class="if">
-
-</div>
-}
-
-<hr>
-<table border="1" cellspacing="0">
-  <tr>
-    <th>Name</th>
-    <th>Age</th>
-    <th>Email</th>
-  </tr>
-  <tr *ngFor="let student of students">
-    <td>{{student.name}}</td>
-    <td>{{student.age}}</td>
-    <td>{{student.email}}</td>
-  </tr>
-</table>
-
-<hr>
-
+<nav class="navbar">
 <a routerLink="/login">Go to Login</a>
 <br>
 <a routerLink="/registration">Go to registration</a>
+<a routerLink="/crud">CRUD Practice</a>
+<a routerLink="/basic">Basic Practice</a>
+</nav>
+
+
 <router-outlet></router-outlet>
 <br/>
 <!-- <app-login></app-login>

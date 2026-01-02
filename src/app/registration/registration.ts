@@ -17,6 +17,7 @@ export class Registration {
     this.user = data ? JSON.parse(data) : [];
   }
 registration() {
+   if (!this.username || !this.password) return;
     const newUser = {
       username: this.username,
       password: this.password,

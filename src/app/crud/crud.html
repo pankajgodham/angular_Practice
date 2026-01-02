@@ -1,0 +1,45 @@
+<div class="title">
+  <h1>Angular Crud</h1>
+  <h2>Student Management</h2>
+</div>
+
+<table class="student-table">
+  <tr>
+    <td>Student Roll No :</td>
+    <td>
+      <input type="number" [(ngModel)]="rollNo" [disabled]="editRollNo !== null" />
+    </td>
+  </tr>
+
+  <tr>
+    <td>Student Name :</td>
+    <td>
+      <input type="text" [(ngModel)]="name" />
+    </td>
+  </tr>
+</table>
+
+<div class="add-button">
+  <button *ngIf="editRollNo === null"  (click)="addStudent()">Add Student</button>
+
+  <button *ngIf="editRollNo !== null" (click)="updateStudent()">Update Student</button>
+</div>
+
+<table border="1" cellspacing="0"  class="view-student">
+  <tr>
+    <th>Roll No</th>
+    <th>Name</th>
+    <th>Action</th>
+  </tr>
+  <tr *ngFor="let s of students">
+    <td>{{ s.rollNo }}</td>
+    <td>{{ s.name }}</td>
+    <td>
+      <button (click)="editStudent(s.rollNo)" class="edit-button">Edit</button>
+      <button (click)="deleteStudent(s.rollNo)" class="Delete-button">Delete</button>
+    </td>
+  </tr>
+</table>
+
+<p *ngIf="students.length === 0">No students yet</p>
+

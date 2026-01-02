@@ -4,6 +4,9 @@
     width: 300px;
     margin: auto;
     align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .login input{
     display: block;
@@ -11,11 +14,14 @@
     width: 100%;
     padding: 8px;
     box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
 }
 .login button{
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #2691acff;
     color: white;
     border: none;
     cursor: pointer;

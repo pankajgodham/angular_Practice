@@ -1,0 +1,91 @@
+.title {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #f0f0f0;
+    color: #0179a8ff;
+}
+
+.title h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.student-table {
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.student-table td {
+    padding: 10px;
+}
+
+.student-table label {
+    font-weight: bold;
+}
+
+.student-table input {
+    padding: 8px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    
+}
+.add-button .btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #06e423ff;
+}
+.add-button .btn:hover {
+    background-color: #01668cff;
+}
+.add-button button {
+    padding: 10px 20px;
+    background-color: #0179a8ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.view-student {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+.view-student th, .view-student td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+.view-student th {
+    background-color: #f2f2f2;
+    color: #0179a8ff;
+}
+.view-student .button {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.view-student .edit-button {
+     padding: 10px 20px;
+    background-color: #738288ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.view-student .Delete-button {
+     padding: 10px 20px;
+    background-color: #e00606ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
